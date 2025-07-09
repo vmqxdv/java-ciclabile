@@ -18,7 +18,7 @@ public class IntegersList {
   }
 
   public boolean hasNextElement() {
-    return index + 1 < integers.length;
+    return index < integers.length;
   }
 
   public void addElement(int num) {
