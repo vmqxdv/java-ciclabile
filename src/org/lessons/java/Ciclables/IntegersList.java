@@ -14,8 +14,7 @@ public class IntegersList {
   }
 
   public int getNextElement() {
-    int nextElementIndex = index > 0 ? index++ : 0;
-    return integers[nextElementIndex];
+    return integers[index++];
   }
 
   public boolean hasNextElement() {
