@@ -5,6 +5,7 @@ public class Main {
 
     IntegersList integers = new IntegersList();
 
+    // -- Empty Constructor
     System.out.printf("%s\nPrimo while loop:\n", "-".repeat(15));
 
     while (integers.hasNextElement()) {
@@ -22,6 +23,15 @@ public class Main {
 
     while (integers.hasNextElement()) {
       System.out.println(integers.getNextElement());
+    }
+
+    // -- Contructor with array
+    IntegersList integersFromArray = new IntegersList(new int[] { 1, 5, 8, 7, 3, 2 });
+
+    System.out.printf("%s\nTerzo while loop:\n", "-".repeat(15));
+
+    while (integersFromArray.hasNextElement()) {
+      System.out.println(integersFromArray.getNextElement());
     }
   }
 }
